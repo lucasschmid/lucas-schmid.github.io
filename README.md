@@ -1,1 +1,0 @@
-# lucas-schmid.github.io
