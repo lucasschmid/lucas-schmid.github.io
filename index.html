@@ -1,158 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Lucas</title>
-	<link rel="icon" href="icon.png.png">
 	<style>
-		body{
-			margin: 0;
-			padding: 0;
-			background-attachment:fixed;
-			background-size:100%;
-			background-repeat:no-repeat;
-			background-color:#262626;
+		#well{
+			margin-left:auto;
+			margin-right:auto;
+			width:50em;
+			background-color:gray;
 		}
-		
-		#main ul{
-			border:5px solid #666666;
-			margin:0;
-			background-color:#666666;
-			list-style:none;
-		}
-		
-		#main ul li{
-			margin:0;
-			display: inline;
-		}
-		
-		#main ul li a{
-			background-color:#666666;
-			padding: 10px 80px;
-			display: inline-block;
-			color:#f2f2f2;
-			text-decoration:none;
-			font-family:Verdana;
-			border-radius:50px;
-		}
-		#main ul li a:hover, #menu ul li a:active{
-			color:white;
-			box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-			background-color: #737373;
-			text-shadow: 1px 1px #737373;
-		}
-		#main ul li img{
-			margin:0;
-			padding: 0px 20px;
-		}
-		h1{
+		#well label{
 			background-color:white;
-			display: inline-block;
-			text-shadow: 1px 1px white;
+			padding:5px 5px;
+			border-radius:5px;
 		}
-		#bar{
-			background-image:url(mapa.png);
-			background-repeat:no-repeat;
-			background-size:100%;
-			display:block;
-			border:3px solid #595959;
-			margin:0;
-			background-color:#595959;
+		#well h1{
+			text-align:center;
+			margin-bottom:0px;
+			background-color: black;
+			color:white;
 		}
-		#bar p{
-			color: white;
-			text-shadow: 0 0 3px white;
-			font-family:Verdana;
-			font-size:50px;
+		#well fieldset{
+			background-color:pink;
 		}
-		#tabela{
-			border-radius: 5px;
-			background-color: #f2f2f2;
-			padding: 20px;
-			color:black;
+		#well form{
+		border:10px solid green;
+		border-bottom-width:10px;
 		}
-		#objetivo{
-			border:10px solid green;
-			border-top-color:#595959;
-			border-right-color:transparent;
-			border-left-color:transparent;
-			border-bottom-color:transparent;
-			border-top-width:3px;
-			margin:0;
-			text-indent:20px;
-			background-color:gray;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50em
+		.user{
+			color: black;
+			padding:10px 10px;
 		}
-		#sobre{
-			border: 10px solid gray;
-			border-top-color:#595959;
-			border-right-color:transparent;
-			border-left-color:transparent;
-			border-bottom-color:transparent;
-			border-top-width:1px;
-			margin:0;
-			text-indent:20px;
-			background-color:gray;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50em
+		.user input{
+			border-radius:4px;
+			padding:2px 10px;
+			text-indent:0px;
+			margin-left:0px;
+		}
+		.password{
+			padding:10px 10px;
+		}
+		.password input{
+			border-radius:4px;
+			margin-left:11px;
+			padding:2px 10px;
 		}
 		.botao{
-			border-radius:5px;
-			padding: 9px 10px;
-			background-repeat:no-repeat;
-			background-size:200px;
-			font-family:Verdana;
-			color: #145214;
-			text-decoration:none;
-			background-color:#5dd55d;
+			border-radius:3px;
+			background-color:green;
+			border-color:green;
 		}
 		.botao:hover, .botao:active{
-			color:white;
-			box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-			background-color: #71da71;
-			text-shadow: 1px 1px #71da71;
+			background-color:white;
+			border-color:white;
 		}
-			
-
 	</style>
+<body>
+	<div class="box-parent-login">
+	<div id="well">
+		<h1 class="ls-login-logo">A história</h1>
+		<form role="form">
+			<fieldset>
+ <center>
+				<div class="user">
+					<label for="userLogin">Usuário</label>
+					<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Coloque seu nome...">
+				</div>
+ 
+				<div class="password">
+					<label for="userPassword">Senha</label>
+					<input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+				</div>
+ 
+				<a href="#" class="ls-login-forgot">Esqueci minha senha</a>
+ 
+				<input class="botao" type="submit" value="Login">
+				<p class="txt-center ls-login-signup">Não possui um usuário na Locaweb?
+					<a href="#">Cadastre-se agora</a>
+				</p>
+ </center>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+</body>
 
 </head>
-<body>
-	<div id="bar">
-		<center>
-		<b><p>Bem vindo<img src="globo.png"height="100" width="100">A História</p></b>
-		</center>
-	</div>	
-	<div id="main">
-		<ul>
-			<b>
-			<li><a href="https://www.instagram.com/_lucasschmid/" target="blank" title="@_lucasschmid" onclick="alert('Ao clicar em OK você será direcionado para outra página.')"><img src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon-1.png"height="30" width="30" alt="descrição"/>@_lucasschmid</a></li>
-			<li><a href="timeline.html" target="blank" title="Linha do tempo"><img src="relogio.png"height="30" width="30">Linha do tempo</a></li>
-			<li><a href="https://api.whatsapp.com/send?phone=5547996015332" target="blank" title="WhatsApp"><img src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png"height="30" width="30">47996015332</a></li>
-			</b>
-		</ul>
-	</div>
-	<center>
-<font face="Verdana" color="white">
-	</center>
-	<div id="objetivo">
-	<p><h3>Intuito do site:</h3></p>
-	<p>Fiz este site com a intenção de aproximar as pessoas da história. A história é todo o nosso passado, que se não for lembrado, poderemos repetir os erros.</p>
-	<p><b>Tratarei dos seguintes fatos históricos:</b></p>
-		<ul>
-			<li>Concluir o curso de <b>Sistemas de Informação</b>;</li>
-			<li>Passar na matéria <b>TGA</b>;</li>
-		</ul>
-	</div>
-	<div id="sobre">
-	<p><h3>Sobre mim:</h3></p>
-	<center>
-	<a class="botao" href="timeline.html" target="blank">Clique aqui</a>
-	</center>
-	</div>
-</font>
-</body>
 
 </html>
